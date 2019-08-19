@@ -154,7 +154,7 @@ namespace TaskRunner
                         try
                         {
                             var divisionResult = num1 / num2;
-                            Console.WriteLine($"The result of multiplication: {divisionResult.realPart} + {divisionResult.imaginaryPart}i ");
+                            Console.WriteLine($"The result of division: {divisionResult.realPart} + {divisionResult.imaginaryPart}i ");
                         }
                         catch (DivideByZeroException e)
                         {

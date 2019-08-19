@@ -35,7 +35,7 @@ namespace Classes
                 throw new DivideByZeroException();
             }
             ComplexNumber complex = new ComplexNumber(
-                realPart: ((c1.realPart * c2.realPart) + (c1.imaginaryPart * c2.realPart)) / ((c2.realPart * c2.realPart) + (c2.imaginaryPart * c2.imaginaryPart)),
+                realPart: ((c1.realPart * c2.realPart) + (c1.imaginaryPart * c2.imaginaryPart)) / ((c2.realPart * c2.realPart) + (c2.imaginaryPart * c2.imaginaryPart)),
                 imaginaryPart: ((c2.realPart * c1.imaginaryPart) - (c1.realPart * c2.imaginaryPart)) / ((c2.realPart * c2.realPart) + (c2.imaginaryPart * c2.imaginaryPart)));
             return complex;
         }
