@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskRunner", "TaskRunner\Ta
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Classes", "Classes\Classes.csproj", "{A29DDD47-55E1-4E77-A99D-2A78DF29C4CF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inheritance", "Inheritance\Inheritance.csproj", "{F07857E0-EC29-4F4D-B06F-CCF432EBC06A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{A29DDD47-55E1-4E77-A99D-2A78DF29C4CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A29DDD47-55E1-4E77-A99D-2A78DF29C4CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A29DDD47-55E1-4E77-A99D-2A78DF29C4CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F07857E0-EC29-4F4D-B06F-CCF432EBC06A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F07857E0-EC29-4F4D-B06F-CCF432EBC06A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F07857E0-EC29-4F4D-B06F-CCF432EBC06A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F07857E0-EC29-4F4D-B06F-CCF432EBC06A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
