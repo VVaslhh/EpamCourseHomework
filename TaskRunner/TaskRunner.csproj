@@ -7,6 +7,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Classes\Classes.csproj" />
+    <ProjectReference Include="..\Collections\Collections.csproj" />
     <ProjectReference Include="..\Inheritance\Inheritance.csproj" />
   </ItemGroup>
 
