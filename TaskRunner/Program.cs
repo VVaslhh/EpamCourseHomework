@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using Classes;
 using Inheritance;
 using Collections;
@@ -7,7 +8,7 @@ namespace TaskRunner
 {
     static class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             bool endApp = false;
             Console.WriteLine("Viktoriia Vasyltsiv");
@@ -27,6 +28,9 @@ namespace TaskRunner
                 Console.WriteLine("\t7   - Task2 HW2 Inheritance");
                 Console.WriteLine("\t8   - Task3 HW2 Inheritance");
                 Console.WriteLine("\t9   - Task4 HW2 Inheritance");
+                Console.WriteLine("\t10   - Task1 HW3 Collections");
+                Console.WriteLine("\t11   - Task2 HW3 Collections");
+                Console.WriteLine("\t12   - Task3 HW3 Collections");
                 Console.WriteLine("Your Option?");
                 string option = Console.ReadLine();
                 Console.WriteLine("\n");
@@ -198,6 +202,51 @@ namespace TaskRunner
 
                         DrawAll(f4, s4, r4, r4, s4, f4);
 
+                        break;
+                    case "10":
+                        Task12 person = new Task12();
+                        person.DisplayNameAndAge();
+
+                        break;
+
+                    case "11":
+                        Task12 personTwoMore = new Task12();
+                        Person oneMore = new Person { Name = "Jess", Age = 45, PhoneNumbers = new List<string> { Task12.GetRandomPhoneNumber(), Task12.GetRandomPhoneNumber(), Task12.GetRandomPhoneNumber() } };
+                        Person twoMore = new Person { Name = "Finn", Age = 51, PhoneNumbers = new List<string> { Task12.GetRandomPhoneNumber(), Task12.GetRandomPhoneNumber(), Task12.GetRandomPhoneNumber() } };
+                        var temp = new List<Person>() { oneMore, twoMore };
+                        personTwoMore.persons.AddRange(temp);
+
+                        personTwoMore.DisplayPhoneNumbers();
+
+                        break;
+
+                    case "12":
+                        Task3 list = new Task3();
+                        List<string> initial = list.CreateList();
+                        Console.WriteLine($"List before transformation:");
+                        list.Display(initial);
+
+                        List<string> listModify = list.ModifyList();
+                        Console.WriteLine($"List after transformation:");
+                        list.Display(listModify);
+
+                        bool endTask = false;
+                        while (!endTask)
+                        {
+                            try
+                            {
+
+                                Console.Write("Enter the number of page or Press any Not number key to close task: ");
+                                bool pageNumber = int.TryParse(Console.ReadLine(), out int page);
+                                if (!pageNumber) endTask = true;
+                                list.DisplayPage(listModify, page);
+                            }
+                            catch (ArgumentOutOfRangeException e)
+                            {
+                                Console.WriteLine(e.Message);
+                            }
+                                                        
+                        }
                         break;
                     default:
 

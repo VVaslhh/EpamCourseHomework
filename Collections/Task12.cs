@@ -4,10 +4,10 @@ using System.Text;
 
 namespace Collections
 {
-    class Task12
+   public class Task12
     {
         //Task1
-        public readonly List<Person> persons = new List<Person>()
+        public List<Person> persons = new List<Person>()
         {
             new Person(){ Name = "Nathan", Age = 23, PhoneNumbers = new List<string> {GetRandomPhoneNumber(), GetRandomPhoneNumber(), GetRandomPhoneNumber() } },
             new Person() { Name = "Simon", Age = 35, PhoneNumbers = new List<string> {GetRandomPhoneNumber(), GetRandomPhoneNumber(), GetRandomPhoneNumber() } },
@@ -44,6 +44,7 @@ namespace Collections
         {
             foreach (var person in persons)
             {
+                Console.Write($"Name:{person.Name}   ");
                 foreach (var number in person.PhoneNumbers)
                     Console.Write($"PhoneNumber:{number}   ");
                 Console.Write("\n");
